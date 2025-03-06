@@ -1,15 +1,19 @@
 const defaultResult = 0;
 let currentResult = defaultResult;
 
+//Gets input from the input field
 function getUserNumberInput(){
     return  parseInt(userInput.value);
 }
 
+
+// Generates and writes calculation log
 function createAndWriteOutput(operator, resultBeforeCalc, calcNumber){
     const calcDescription = `${resultBeforeCalc} ${operator} ${calcNumber}`;
-    outputResult(currentResult, calcDescription);
+    outputResult(currentResult, calcDescription);//this function is from script.js file.
 }
 
+// This function is for adding the inputed value
 function add(){
     const enteredNumber = getUserNumberInput();
     const initialResult = currentResult;
@@ -17,6 +21,7 @@ function add(){
     createAndWriteOutput('+', initialResult, enteredNumber );
 }
 
+// This function is for subtracting the inputed value
 function subtract(){
     const enteredNumber = getUserNumberInput();
     const initialResult = currentResult;
@@ -24,6 +29,7 @@ function subtract(){
     createAndWriteOutput('-', initialResult, enteredNumber );
 }
 
+// This function is for multiply the inputed value
 function multiply(){
     const enteredNumber = getUserNumberInput();
     const initialResult = currentResult;
@@ -31,6 +37,7 @@ function multiply(){
     createAndWriteOutput('*', initialResult, enteredNumber );
 }
 
+// This function is for divide the inputed value
 function divide(){
     const enteredNumber = getUserNumberInput();
     const initialResult = currentResult;
