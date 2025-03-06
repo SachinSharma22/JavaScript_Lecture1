@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #523fc2;
+    height: 90px;
+    color: #fff;
+}
+ header h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    font-size: 22px;
+ }
+
+ #calculator, #results{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+ }
+
+ #calculator, #results{
+    width: 300px;
+    height: 150px;
+    margin: 0 auto;
+    border: 1px solid #7a7474;
+    margin-top: 20px;
+    border-radius: 15px;
+ }
+ #calculator input{
+    width: 80px;
+    height: 80px;
+    text-align: center;
+ }
+
+ #calculator #calc-actions button{
+    width: 20px;
+    height: 20px;
+    /* padding: 10px; */
+    text-align: center;
+    margin-top: 20px;
+ }
+
+ #calc-actions{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin: 10px;
+ }
+
+ #btn-add, #btn-subtract, #btn-multiply, #btn-divide{
+    width: 50px;
+    height: 50px;
+    /* padding: 10px; */
+
+ }
+
+ button{
+    margin: 2px 5px;
+    background: #523fc2;
+    color: #fff;
+    outline: none;
+    border: none;
+    width: 3rem;
+    height: 3rem;
+ }
+
+ #results h2{
+    color: #251294;
+ }
+
+#current-calculation{
+    white-space: pre;
+}
